@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+</head>
+<body>
+
+<h1>This is a Result Page</h1>
+<p>This is a paragraph.</p>
+<h1> {{key1}}</h1>
+<a href="{%url 'home'%}"> Click here for home page</a>
+
+<h1>your age is  {{a.age}} </h1>
+<h1>your name is  {{a.name}} </h1>
+<h1>Word count in comment is {{a.word}}</h1>
+{% for word, num in a.counts.items %}
+{{word}} : {{num}}
+
+{%endfor%}
+<h1>your comment is  {{a.counts}} </h1>
+<h1>your comment is  {{a.comment}} </h1>
+
+
+
+
+</body>
+</html>
